@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item>Portugal</item>
+        <item>Turkey</item>
+        <item>England</item>
+        <item>Germany</item>
+        <item>Japan</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>General</item>
+        <item>Technology</item>
+        <item>Business</item>
+        <item>Sports</item>
+        <item>Health</item>
+    </string-array>
+</resources>
+
