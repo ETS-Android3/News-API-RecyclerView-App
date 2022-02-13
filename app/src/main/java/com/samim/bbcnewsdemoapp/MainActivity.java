@@ -53,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
     private static String countryCode = "";
     private static String category = "";
     private static Boolean bbcSelected = true;
-    private LinearLayout homeLy;
-    private LinearLayout fingerprintLy;
-    private static Boolean isSuccessLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.ic_logo_white);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-        homeLy = (LinearLayout) findViewById(R.id.main);
-        fingerprintLy = (LinearLayout) findViewById(R.id.fingerprint);
-        Button getBtn = (Button) findViewById(R.id.get);
-        newsListview = (ListView) findViewById(R.id.meg_list_lisview);
 
         Fingerprint fingerprint = new Fingerprint(context);
         fingerprint.fingerprintFun();
@@ -177,104 +169,11 @@ public class MainActivity extends AppCompatActivity {
             Window window = dialog.getWindow();
             window.setLayout(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT);
 
-
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-
-
-//    private boolean fingerPrintFun(){
-//        // Initialising msgtext and loginbutton
-//        TextView msgtex = findViewById(R.id.msgtext);
-//        final Button loginbutton = findViewById(R.id.login_btn);
-//
-//        // creating a variable for our BiometricManager
-//        // and lets check if our user can use biometric sensor or not
-//        BiometricManager biometricManager = androidx.biometric.BiometricManager.from(this);
-//        switch (biometricManager.canAuthenticate()) {
-//
-//            // this means we can use biometric sensor
-//            case BiometricManager.BIOMETRIC_SUCCESS:
-//                msgtex.setText("You can use the fingerprint sensor to login");
-//                msgtex.setTextColor(Color.parseColor("#fafafa"));
-//                if (isSuccessLogin != null && isSuccessLogin){
-//                    fingerprintLy.setVisibility(View.GONE);
-//                    homeLy.setVisibility(View.VISIBLE);
-//                }
-//                break;
-//
-//            // this means that the device doesn't have fingerprint sensor
-//            case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
-//                msgtex.setText("This device doesnot have a fingerprint sensor");
-//                loginbutton.setVisibility(View.GONE);
-//                fingerprintLy.setVisibility(View.GONE);
-//                homeLy.setVisibility(View.VISIBLE);
-//                break;
-//
-//            // this means that biometric sensor is not available
-//            case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
-//                msgtex.setText("The biometric sensor is currently unavailable");
-//                loginbutton.setVisibility(View.GONE);
-//                fingerprintLy.setVisibility(View.GONE);
-//                homeLy.setVisibility(View.VISIBLE);
-//                break;
-//
-//            // this means that the device doesn't contain your fingerprint
-//            case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
-//                msgtex.setText("Your device doesn't have fingerprint saved, \n please check your security settings");
-//                loginbutton.setVisibility(View.GONE);
-//                fingerprintLy.setVisibility(View.GONE);
-//                homeLy.setVisibility(View.VISIBLE);
-//                break;
-//            case BiometricManager.BIOMETRIC_ERROR_SECURITY_UPDATE_REQUIRED:
-//            case BiometricManager.BIOMETRIC_ERROR_UNSUPPORTED:
-//            case BiometricManager.BIOMETRIC_STATUS_UNKNOWN:
-//                fingerprintLy.setVisibility(View.GONE);
-//                homeLy.setVisibility(View.VISIBLE);
-//                break;
-//        }
-//        // creating a variable for our Executor
-//        Executor executor = ContextCompat.getMainExecutor(this);
-//        // this will give us result of AUTHENTICATION
-//        final BiometricPrompt biometricPrompt = new BiometricPrompt(MainActivity.this, executor, new BiometricPrompt.AuthenticationCallback() {
-//            @Override
-//            public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
-//                super.onAuthenticationError(errorCode, errString);
-//            }
-//
-//            // THIS METHOD IS CALLED WHEN AUTHENTICATION IS SUCCESS
-//            @Override
-//            public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
-//                super.onAuthenticationSucceeded(result);
-//                Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
-//                loginbutton.setText("Login Successful");
-//                isSuccessLogin = true;
-//                fingerprintLy.setVisibility(View.GONE);
-//                homeLy.setVisibility(View.VISIBLE);
-//            }
-//            @Override
-//            public void onAuthenticationFailed()
-//            {
-//                super.onAuthenticationFailed();
-//                isSuccessLogin = false;
-//            }
-//        });
-//        // creating a variable for our promptInfo
-//        // BIOMETRIC DIALOG
-//        final BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("GFG")
-//                .setDescription("Use your fingerprint to login ").setNegativeButtonText("Cancel").build();
-//        loginbutton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                biometricPrompt.authenticate(promptInfo);
-//
-//            }
-//        });
-//
-//        return true;
-//    }
 
     //back button to exit
     boolean doubleBackToExitPressedOnce = false;

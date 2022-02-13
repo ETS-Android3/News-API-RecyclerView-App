@@ -14,22 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
-        <include android:visibility="gone" android:id="@+id/login" layout="@layout/login"/>
         <include android:visibility="visible" android:id="@+id/fingerprint" layout="@layout/fingerprint_layout"/>
-        <include android:visibility="gone" android:id="@+id/news" layout="@layout/news_title_list"/>
         <include android:visibility="gone" android:id="@+id/news_details" layout="@layout/news_details"/>
         <include android:visibility="gone" android:id="@+id/main" layout="@layout/content_main"/>
     </FrameLayout>
 
-
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:menu="@menu/navigation_menu"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:headerLayout="@layout/nav_header_main"-->
-<!--        android:id="@+id/nv">-->
-
-<!--    </com.google.android.material.navigation.NavigationView>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
