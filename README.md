@@ -3,6 +3,12 @@ This is a News Android project (Java) with fingerprint login. Using Volley Rest 
 
 ![main screen](https://user-images.githubusercontent.com/54929555/153851670-9266704a-6e0f-4505-bd65-f62ecc12e8e7.jpeg)
 
+News App video
+
+https://user-images.githubusercontent.com/54929555/153852810-4bb0099e-6223-497f-a63d-df599957ea3b.mp4
+
+
+
 
 Android Code Challenge
 
