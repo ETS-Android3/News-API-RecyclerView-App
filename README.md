@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/54929555/153862969-301dfe83-e4a8-4c9d-
 
 `API: https://newsapi.org/v2/top-headlines`
 
-`"x-api-key","Your get from this link https://newsapi.org"`
+`"x-api-key"," get api from this link https://newsapi.org"`
 
 
 ## Gradle
