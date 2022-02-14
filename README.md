@@ -14,6 +14,7 @@ You don’t need to waste too much time in doing complex designs, but you should
 account several screen dimensions and orientations.
 
 Constraints
+
 • The app must be written in Kotlin or Java, preferably Kotlin.
 
 • The app must run on the latest released version of the target platform
