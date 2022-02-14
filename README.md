@@ -4,12 +4,15 @@ This is a News Android project (Java) with fingerprint login. Using Volley Rest 
 Android Code Challenge
 
 Introduction
+
 You will build a smartphone app that should be able to show top headlines for a specific
 
 source (BBC news)
+
 https://newsapi.org/docs/endpoints/top-headlines
 
 Design
+
 You don’t need to waste too much time in doing complex designs, but you should take into
 account several screen dimensions and orientations.
 
