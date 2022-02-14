@@ -1,6 +1,9 @@
 # News-API-RecyclerView-App
 This is a News Android project (Java) with fingerprint login. Using Volley Rest API, RecyclerView, CartView, GSON, bumptech, biometric libraries.
 
+![main screen](https://user-images.githubusercontent.com/54929555/153851670-9266704a-6e0f-4505-bd65-f62ecc12e8e7.jpeg)
+
+
 Android Code Challenge
 
 Introduction
