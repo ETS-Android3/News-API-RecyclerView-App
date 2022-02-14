@@ -44,8 +44,9 @@ Story 2: When the user taps on a headline, he should be taken to a new screen
 
 Acceptance criteria:
 1. Tapping on a headline presents a new screen.
-2. Image, title, description and content should be displayed, if available Bonus Story 3: When user opens the application, 
-it should ask for a fingerprint identification, if available
+2. Image, title, description and content should be displayed, if available 
+
+Bonus Story 3: When user opens the application, it should ask for a fingerprint identification, if available
 
 Acceptance criteria:
 1. If the device has a fingerprint scanner and it’s configured in the device, user should be required to use it when he opens the application
